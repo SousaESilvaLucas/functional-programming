@@ -59,6 +59,14 @@ public class Product /*implements Comparable <Product>*/{
 		price = price * 1.1;
 	}
 	
+	public static String nameUpper(Product p) {
+		return p.getName().toUpperCase();
+	}
+	
+	public String nonStaticNameUpper() {
+		return name.toUpperCase();
+	}
+	
 /*	@Override
 	public int compareTo(Product product) {
 		return price.compareTo(product.price);
